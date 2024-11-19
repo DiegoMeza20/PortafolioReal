@@ -92,35 +92,58 @@
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                    
+                    <p class="fs-6 mb-4">Se inició con la planeación y diseño mecánico del brazo. Tuvimos en cuenta que debía ser un brazo de 3 ejes que terminará en una pinza, la cual debía moverse con un servomotor y por ende, tener una mecánica a base de engranes. </p>
+                        <p class="fs-6 mb-4">Una vez planificado el diseño, se dibujaron las piezas en solidworks para después ser cortadas en mdf a láser. Se hizo un total de 32 piezas, las cuales fueron juntadas en un ensamble de solidworks para asegurar que las medidas fueran correctas. Una vez que el ensamble estaba armado, procedimos con el corte de las piezas. El corte se hizo en una máquina CNC y para ello se importaron las piezas en un archivo DXF.
+                        </p>
+                        <p class="fs-6 mb-4">
+                            Con la piezas cortadas, se pudo empezar con el armado. Comenzamos por la construcción de la base, asegurandonos que el servo estuviera en 0 y se moviera en la dirección deseada. Luego de la base, seguimos con el brazo y sus servos correspondientes. Para pasar a la pinza, nos aseguramos de que la pinza funcionara separada del brazo y fuera capaz de cargar la pelota.
+                             </p>
+                        <p class="fs-6 mb-4">Por último, fuimos conectando cada servo por separado al protoboard y al arduino, el cual está explicado a detalle en la sección de "construcción". Por último probamos que funcionara.
+                        </p>
+                       
+
                         
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Antes de pasar a la construcción física del circuito, se simuló en tinkercad. Para esto, se siguió el diagrama del circuito astable. La simulación permitió verificar el funcionamiento del circuito y confirmar que el temporizador 555 operaba como se esperaba, generando el parpadeo del LED con la frecuencia ajustable. </p>
+                            <p class="fs-6 mb-4">Se hicieron dos simulaciones en dos diferentes aplicaciones, Tinkercad y Solidworks, una para el circuito con los servomotores y potenciómetros, y la segunda para el diseño del brazo. </p>
                             <p class="fs-6 mb-4">Gracias a la simulación, fuimos capaces de entender el comportamiento del circuito y así, hacer los cambios necesarios en caso de que no funcionara. Esta fase de simulación facilitó una comprensión más profunda del circuito y aseguró que todos los componentes estuvieran correctamente configurados.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
                     
                             <p id="diseño">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Se siguió el diagrama del circuito proporcionado en clase. El circuito está configurado en modo astable, lo que significa que marcaba altos y bajos de forma continua. Para esto se hicieron uso de tres resistencias importantes (de1000 ohms y 220 ohms), un capacitor, transistor y un potenciómetro.</p>
+                            <p class="fs-6 mb-4">Para el diseño del brazo utilizamos Solidworks para diseñar las piezas con las medidas correspondientes de los servomotores y los tornillos, para posteriormente cortarlas en una cortadora laser y comenzar con la construcción.</p>
                            
                             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Se hizo uso de un protoboard para la base de la construcción de nuestro circuito. Los componentes fueron conectados según el diagrama, haciendo uso del temporizador, capacitor, transistor, resietencias, led. Las conexiones se realizaron con cuidado para asegurar la correcta integración de cada componente. Finalmente, las líneas de alimentación y tierra fueron conectadas a una pila de 9V, proporcionando la energía necesaria para el funcionamiento del circuito. Se verificaron todas las conexiones antes de encender el circuito para asegurarse de que no hubiera errores y que todo estuviera funcionando según el diseño.
+                            <p class="fs-6 mb-4">Utilizamos diferentes tamaños de tornillos para ensamblar las piezas y ajustarlas con los servomotores. Para la pinza utilizamos diferentes engranes y utilizamos en total 4 microservomotores en todo el brazo.
                             </p>
-                            
+                     <p class="fs-6 mb-4">Construimos un circuito en TInkercad donde utilizamos 4 potenciómetros, dos para el brazo, uno para la base y otro para la pinza.
+                            </p>
+                     <p class="fs-6 mb-4">Para crear el código, utilizamos un Arduino para programar el movimiento de los servomotores con los potenciómetros y lo probamos con la simulación.
+                            </p>
+                     <p class="fs-6 mb-4">Teniendo el código y el brazo listo, comenzamos a probar cada uno de los potenciómetros para comprobar si se mueven en la dirección correcta y si no presenta alguna falla el circuito, hasta lograr conectar todos en un mismo protoboard y hacer funcionar el brazo.
+                            </p>
+                             <h2 class="fw-bolder mb-4 mt-5 fs-5">Construcción</h2>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
+                           <h2 class="fw-bolder mb-4 mt-5 fs-5">Código</h2>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">El circuito funcionó de manera correcta. El led parpadeó y se podía ajustar con el potenciómetro, coincidiendo con la simulación.</p>
+                        <p class="fs-6 mb-4">El brazo robótico funcionó correctamente, permitiendo el control de cada articulación. Los potenciómetros ajustaron los ángulos de los servos con una respuesta rápida. Logramos poder cargar la pelota y moverla hacia otro lado, cumpliendo con el objetivo de la práctica.</p>
+                    <h2 class="fw-bolder mb-4 mt-5 fs-5">Video Pinza</h2>
                         <figure class="mb-4" align="center"><video width="60%"  controls>
-                            <source src="video/555.mp4" type="video/mp4">
+                            <source src="video/videopinza.mp4" type="video/mp4">
+                        </video></p></figure>
+                     <h2 class="fw-bolder mb-4 mt-5 fs-5">Video Brazo</h2>
+                        <figure class="mb-4" align="center"><video width="60%"  controls>
+                            <source src="video/videobrazo.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">La práctica permitió comprender el funcionamiento del temporizador 555 en configuración astable y su aplicación en la generación de señales oscilatorias. La simulación previa a la construcción fue útil para prever el comportamiento del circuito y realizar ajustes necesarios. La construcción física confirmó que el diseño y la simulación estaban correctos.</p>
+                        <p class="fs-6 mb-4">En conclusión, esta práctica funciono bien ya que nos permite mover una pelota con precisión. Los potenciómetros sirvieron para controlar cada articulación del brazo, permitiendo movimientos coordinados para agarrar y desplazar la pelota.</p>
                         
 
                         <p id="referencias">
@@ -131,9 +154,9 @@
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
-                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+                       
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigoarduino.ino</a> </p>
+                        
 
                 </div>
             </section>
