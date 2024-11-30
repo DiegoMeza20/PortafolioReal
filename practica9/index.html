@@ -61,7 +61,7 @@
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Octubre 25, 2024</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Noviembre 26, 2024</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >CNC</a>
                         <a class="badge bg-primary text-decoration-none link-light" >VCarve</a>
@@ -79,40 +79,41 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En esta práctica aprendimos a como hacer una figura utilizando fibra de vidrio, al igual que como maquinar un contramolde.</p>
+                        <p class="fs-6 mb-4">En esta práctica aprendimos a como diseñar, programar, ensamblar mecánicamente y conectar electrónicamente un carro y una brazo robótico, y controlarlos vía bluetooth en un aplicación hecha por nosotros.</p>
                        
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">En esta práctica, trabajamos con fibra de vidrio, un material de gran resistencia y ligereza, ideal para la creación de piezas duraderas y de alto rendimiento. El objetivo fue utilizar la fibra de vidrio para fabricar una daga, un proyecto que nos permitió explorar el proceso de modelado y fabricación de objetos complejos mediante este material. A lo largo de la práctica, aprendimos a aplicar capas de fibra de vidrio sobre un molde, utilizando técnicas de laminado y curado para asegurar la robustez y precisión de la pieza final.</p>
+                        <p class="fs-6 mb-4">En esta práctica, trabajamos en el diseño y desarrollo de dos dispositivos: un carro robótico y un brazo robótico. Aprendimos a ensamblar las partes mecánicas, conectar los componentes electrónicos y programar ambos sistemas para que pudieran moverse y realizar tareas de forma autónoma. Lo más interesante fue que diseñamos una aplicación propia para controlarlos, utilizando Bluetooth para la comunicación entre los dispositivos. Esta práctica nos permitió ver cómo se integran la electrónica, la programación y el diseño mecánico en proyectos de robótica. Este proyecto con el fin de reunir los carros de cada equipo y ponerlos a competir en una arena donde salía mejor beneficiado en la calificación el equipo que recolecte el mayor número de pelotas.</p>
                     
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4"> Maquina CNC</p> Fibra de vidrio </p> Catalizador de fibra de vidrio
+                        <p class="fs-6 mb-4"> Servomotores </p> Fibra de vidrio </p> Catalizador de fibra de vidrio
                     </p> Espuma </p> Guantes  </p> Cubrebocas </p> Resina  </p> Brocha
 
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Primero comenzamos maquinando un modelo 3D en VCarve, pero ahora en espuma. Para el diseño del molde, lo tuvimos que modificar a que este a contramolde para que asi pueda quedar bien la figura.
+                        <p class="fs-6 mb-4">Durante el desarrollo de esta práctica, comenzamos con el diseño y la construcción del carro y el brazo robótico. En la parte mecánica, nos encargamos de seleccionar los materiales adecuados para cada componente, asegurándonos de que fueran lo suficientemente resistentes y ligeros para que los dispositivos pudieran moverse de manera eficiente. En el caso del carro, incorporamos ruedas motorizadas que le permitieron desplazarse en distintas direcciones, mientras que el brazo robótico fue diseñado para realizar movimientos precisos y controlados, imitando el comportamiento de un brazo humano.
                         </p>
-                        <p class="fs-6 mb-4">Teniendo ya el molde en la espuma, empezamos a poner varias capas de pegamento en toda la parte de la figura para que cuando la resina se caliente con el catalizador, no se queme la espuma. La proporción del catalizador fue de 50/50 y con ayuda de una brocha esparcimos la resina por toda la figura. Posteriormente comenzamos a colocar la fibra de vidrio y con la misma brocha haciamos que se pegue.
+                        <p class="fs-6 mb-4">Una vez que tuvimos las piezas mecánicas listas, pasamos a la parte electrónica. Aquí, conectamos los motores, sensores y controladores al Arduino y a un Puente H para 4 motores. Para poder controlar tanto el carro como el brazo robótico de forma remota, utilizamos módulos Bluetooth, lo que nos permitió establecer comunicación inalámbrica entre los dispositivos y nuestra aplicación. Estos módulos fueron clave para transmitir las señales de control sin necesidad de cables, facilitando la interacción en tiempo real.
                         </p>
-                      <p class="fs-6 mb-4">Finalmente, esperamos a que se seque el molde. Al sacarlo nos dimos cuenta que se calento de más y consumio un poco de la espuma.
-                       
-                        
+                      <p class="fs-6 mb-4">La programación fue otra parte crucial del proceso. Para ello, utilizamos un lenguaje de programación para el Arduino que nos permitió escribir los algoritmos necesarios para que los motores y servomotores respondieran de forma adecuada a las órdenes enviadas desde la aplicación. Además, tuvimos que ajustar el software para garantizar que las señales de control llegaran de manera eficiente y sin latencia significativa, asegurando que tanto el carro como el brazo robótico pudieran ejecutar las tareas que les asignamos.
+                        <p class="fs-6 mb-4">Usamos una aplicación llamada "MIT AppInventor" que nos permitió crear una interfaz sencilla y fácil de usar, desde donde podíamos controlar los movimientos del carro y del brazo. La interfaz incluía botones para mover el carro en diferentes direcciones y para accionar el brazo robótico, y para conectar y desconectar el dipositivo al modulo bluetooth, lo que le dio a la práctica una dimensión más interactiva. La comunicación entre la aplicación y los dispositivos robóticos se gestionó mediante el protocolo Bluetooth, lo que nos permitió realizar los controles de manera remota y en tiempo real.
+                        </p>
                            
                             
                             <p id="construccion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                           <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/fibra1.jpg" alt="..." /></figure>
-                                <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/fibra2.jpg" alt="..." /></figure>
+                           <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/carroconstruccion.jpg" alt="..." /></figure>
+                                
                             
 
                             <p id="Resultados"></p>
                             <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                          <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/guadaña.jpg" alt="..." /></figure>
+                          <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/carrito.jpg" alt="..." /></figure>
+                     <figure class="mb-4"><img class="img-fluid rounded" width="400px" src="img/carrito2.jpg" alt="..." /></figure>
                  
 
 
@@ -120,7 +121,11 @@
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
                    
-                        <p class="fs-6 mb-4">En esta práctica aprendimos a aplicar las capas de resina y fibra de vidrio para crear una figura a partir de un molde maquinado en una CNC. Tambien aprendimos nuevas cosas del programa VCarve para maquinar en negativo. Aunque tuvimos muchos problemas haciendo la figura, fue interesante ver como logramos hacer la figura a partir de varios moldes utilizando distintos materiales.</p>
+                        <p class="fs-6 mb-4">En esta prácticaaprendimos a diseñar, ensamblar y programar dispositivos robóticos de manera práctica, experimentando de primera mano cómo diferentes disciplinas se combinan para hacer funcionar sistemas tecnológicos complejos.
+
+
+
+</p>
                         
 
                     
