@@ -1,181 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Práctica 6 | Ibero Puebla</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container px-5">
-                    <a class="navbar-brand">Menu</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
-                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
-                        </ul>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Práctica 6 | Ibero Puebla</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100" style="background-color:#F9F5E8">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container px-5">
+                <a class="navbar-brand">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Seccion TITULO de Portafolio-->
+        <header class="bg-primary py-2 mt-6">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                            <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
+                            <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e
+                                Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </header>
 
-            <!-- Seccion TITULO de Portafolio-->
-            <header class="bg-primary py-2 mt-6">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center">
-                        <div class="col-lg-8 col-xl-7 col-xxl-6">
-                            <div class="my-5 text-center text-xl-start">
-                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
-                                <h1 class="display-8 fw-bolder text-white mb-2">Introduccion a Ing. Mecatrónica</h1>
-                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+        <!-- Seccion TITULO de la Práctica-->
+        <section class="py-1" id="scroll-target">
+            <div class="row" style="margin: 05%;">
+                <div class="col px-3 my-1" style="margin: 05%;">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-3"><a style="font-size: 40px; color:rgb(175, 35, 35); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Módulo bluetooth para control</a></h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                        <img class="img-fluid rounded-circle" width="15%" src="assets/AR.jpg" alt="..." />
+                        <div class="ms-auto">                            
+                            <div class="fw-bold"><a style="font-size: 25px;">Rodríguez Cancino Derek</a></div>
+                            <div class="text-muted"><a style="font-size: 20px;">Ing. Mecatrónica</a></div>
+                        </div>
+                        <!--Aqui termina etiqueta de alumno-->
+                        
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: 2 de Noviembre 2024</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light">Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light">Electrónica</a>
+
+                    </header>
+                </div>
+                <div class="col" style="m">
+                         <h2 class="fw-bolder mb-4 mt-5 fs-5"></h2>
+                        <p class="fs-6 mb-4"><a style="font-size: 15px;"></a></p>
+                        <p class="fs-6 mb-4"></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container px-5">
+
+                    <div class="row gx-5">
+
+                        <div class="col-lg-6">
+                            <!-- Contact card free-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                             <p class="fs-6 mb-4">
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded" width="350px" src="img/AEO.png" alt="..." />
+                </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        <div class="col-lg-6">
+                            <!-- Post content-->
+                            <div class="my-5">
+                               <figure class="mb-4" align="center"><img class="img-fluid rounded" width="250px" src="img/G.png" alt="..." />
+                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                <p id="resumen">
+                    <h2 class="fw-bolder mb-4 mt-5 fs-5"> - Resumen -</h2>
+                    <p class="fs-6 mb-4">En esta práctica se utilizó un módulo Bluetooth, el cual se integró al brazo robótico con la finalidad de lograra controlarlo desde una app, esto facilitando el uso de la misma, ahorrandonos materiales y rediciendo posibilidades de fallo.</p>
+
+                <p id="intro">
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Introducción -</h2>
+                <p class="fs-6 mb-4">App Inventor es una plataforma creada por el MIT en el dominio de Google 
+                Labs para crear aplicaciones de software para controlar hadware de forma inalambrica.</p>
+                <p class="fs-6 mb-4">Los módulos bluetooth son elementos que permiten tener el control de cualquier microcontrolador de manera fácil, por media de protocolos bluetooth con cualquier otro elemento que cuente con el mismo protocolo, desde un celular hasta el microcontrolador deseado.</p>
+
+                <p id="materiales">
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Materiales -</h2>
+                <p class="fs-6 mb-4">-Arduino LEONARDO.</p>
+                <p class="fs-6 mb-4">- MIT App Inventor.</p>              
+                <p class="fs-6 mb-4">-  Módulo bluetooth.</p>
+                <p class="fs-6 mb-4">-Fuente regulable.</p>
+                <p class="fs-6 mb-4">-Capacitor electrolítico.</p>
+                <p id="desarrollo">
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2> </p>
+                <p class="fs-6 mb-4">El control del brazo se basa en el diseño de un programa en la plataforma de MIT App inventor, ahí mismo se realizará un código a través de bloques de texto, con las cuales se echa a andar la aplicación, y posteriormente, en arduino se modifican las entradas de los servomotores.</p> <div class="container px-5 my-5">
+                    <div class="row gx-5">
+
+                        <div class="col-lg-6">
+                            <!-- Contact card free-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                             <p class="fs-6 mb-4">
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="500px" src="img/L.png" alt="..." /></figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        <div class="col-lg-6">
+                            <!-- Post content-->
+                            <div class="my-5">
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="800px" src="img/LL.png" alt="..." /></figure>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
+                
 
-            <!-- Seccion TITULO de la Práctica-->
-            <section class="py-3" id="scroll-target">
-                <div class="container px-5 my-2">
-                    <!-- Post header-->
-                    <header class="mb-4">
-                        <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Brazo con Servomotores</h1>
+                <p id="simulacion">
+                <h1 class="fw-bolder2 mb-4 mt-5 fs-5" align="center">- Código -</h1>
+                <p class="fs-6 mb-4">
+                    <div class="container px-5 my-5">
+                    <div class="row gx-5">
 
-                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
-                            <img class="img-fluid rounded-circle" width="50px" src="img/diegoyo.jpeg" alt="..." />
-                            <div class="ms-2">
-                                <div class="fw-bold">Diego Meza Rosales</div>
-                                <div class="text-muted">Ingeniería</div>
+                        <div class="col-lg-6">
+                            <!-- Contact card free-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                             <p class="fs-6 mb-4">Se tuvo que diseñar el programa de Arduino que iba a ir en conjunto con la app y así poder controlar correcta y totalmente el brazo robótico.
+                            <figure class="mb-4" align="center">
+
+#include < SoftwareSerial.h ><br>
+#include < Servo.h ><br>
+SoftwareSerial mySerial(2, 3);<br>
+char command='X';<br>
+ <br>
+Servo myServo;<br>
+Servo myServo1;<br>
+Servo myServo2;<br>
+Servo myServo3;<br>
+ <br>
+void setup()<br>
+{<br>
+  mySerial.begin(9600);<br>
+  Serial.begin(9600);<br>
+  myServo.attach(8);<br>
+  myServo.write(90);<br>
+  myServo1.attach(9);<br>
+  myServo1.write(90);<br>
+  myServo2.attach(10);<br>
+  myServo2.write(90);<br>
+  myServo3.attach(11);<br>
+  myServo3.write(90);<br>
+}<br>
+ <br>
+ <br>
+void loop() {  <br>
+ <br>
+if (mySerial.available() > 0) {<br>
+      command = mySerial.read();<br>
+      Serial.println(command);<br>
+      if (command == 'L') {         // Command to move servo left (0 degrees)   <br> 
+       myServo.write(0);     }<br>
+       else if (command == 'C') {  // Command to center the servo (90 degrees)  <br>    
+       myServo.write(90);     }<br>
+       else if (command == 'R') { // Command to move servo right (180 degrees)<br>
+        myServo.write(180); }<br>
+       else if (command == 'A') {    <br>   
+       myServo1.write(0);     }<br>
+       else if (command == 'S') {  <br>    
+       myServo1.write(90);     }<br>
+       else if (command == 'Q') { <br>
+        myServo1.write(180); }<br>
+       else if (command == 'Z') {         <br> 
+       myServo2.write(0);     }<br>
+       else if (command == 'V') {  <br>     
+       myServo2.write(90);     }<br>
+       else if (command == 'B') { <br>
+        myServo2.write(180); }<br>
+       else if (command == 'T') { <br>   
+       myServo3.write(0);     }<br>
+       else if (command == 'Y') {  <br>      
+       myServo3.write(90);     }<br>
+       else if (command == 'U') { <br>
+        myServo3.write(180); }
+       <br> }
+       
+   <br>
+}
+
+                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        <div class="col-lg-6">
+                            <!-- Post content-->
+                            <div class="my-5">
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="800px" src="img/F.png" alt="..." /></figure>
                             </div>
-                        <!--Aqui termina etiqueta de alumno-->
-
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 11, 2024</div>
-                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
-                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
-                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
-
-                    </header>
-                </div>
-            </section>
-
-            <!-- Seccion de CONTENIDO de la Práctica-->
-            <section>
-                <div class="container px-5">
-
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/brazo.jpg" alt="..." /></figure>
-                                
-                    <p id="resumen">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">En está practica se hizo el diseño y construcción de un brazo robótico con piezas cortadas en mdf. El brazo fue diseñado y programado para moverse de acuerdo a la señal recibida de 4 potenciómetros, uno para cada eje del brazo.</p>
-
-                        
-                        <p id="intro">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Un servomotor es un tipo de dispositivo que permite controlar la posición angular del eje. Esto se logra enviando la señal de control de PWM al dispositivo. Durante la práctica, el Arduino jugaba el papel de un emitía señales para que el servomotor gire en un cierto ángulo.</p>
-                        <p class="fs-6 mb-4">Se conecto un potenciómetro que permita regular con la mano la posición del servomotor. El Arduino leía el valor del potenciómetro y lo convertía en un ángulo, que lo enviaba al servomotor.</p>
-                        
-                        <p id="materiales">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Los materiales que se utilizaron fueron: MDF, Tornillos de M3, Tornillos 1/4, 4 servomotores SG90, 4 potenciometros, Arduino UNO, Protoboard, Jumpers, Fuente de poder, Puntas para fuente.</p>
-                        
-                        <p id="desarrollo">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                    <p class="fs-6 mb-4">Se inició con la planeación y diseño mecánico del brazo. Tuvimos en cuenta que debía ser un brazo de 3 ejes que terminará en una pinza, la cual debía moverse con un servomotor y por ende, tener una mecánica a base de engranes. </p>
-                        <p class="fs-6 mb-4">Una vez planificado el diseño, se dibujaron las piezas en solidworks para después ser cortadas en mdf a láser. Se hizo un total de 32 piezas, las cuales fueron juntadas en un ensamble de solidworks para asegurar que las medidas fueran correctas. Una vez que el ensamble estaba armado, procedimos con el corte de las piezas. El corte se hizo en una máquina CNC y para ello se importaron las piezas en un archivo DXF.
-                        </p>
-                        <p class="fs-6 mb-4">
-                            Con la piezas cortadas, se pudo empezar con el armado. Comenzamos por la construcción de la base, asegurandonos que el servo estuviera en 0 y se moviera en la dirección deseada. Luego de la base, seguimos con el brazo y sus servos correspondientes. Para pasar a la pinza, nos aseguramos de que la pinza funcionara separada del brazo y fuera capaz de cargar la pelota.
-                             </p>
-                        <p class="fs-6 mb-4">Por último, fuimos conectando cada servo por separado al protoboard y al arduino, el cual está explicado a detalle en la sección de "construcción". Por último probamos que funcionara.
-                        </p>
-                       
-
-                        
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Se hicieron dos simulaciones en dos diferentes aplicaciones, Tinkercad y Solidworks, una para el circuito con los servomotores y potenciómetros, y la segunda para el diseño del brazo. </p>
-                            <p class="fs-6 mb-4">Gracias a la simulación, fuimos capaces de entender el comportamiento del circuito y así, hacer los cambios necesarios en caso de que no funcionara. Esta fase de simulación facilitó una comprensión más profunda del circuito y aseguró que todos los componentes estuvieran correctamente configurados.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/4servosarduino.png" alt="..." /></figure>
-                    
-                            <p id="diseño">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Para el diseño del brazo utilizamos Solidworks para diseñar las piezas con las medidas correspondientes de los servomotores y los tornillos, para posteriormente cortarlas en una cortadora laser y comenzar con la construcción.</p>
-                           
-                            
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Utilizamos diferentes tamaños de tornillos para ensamblar las piezas y ajustarlas con los servomotores. Para la pinza utilizamos diferentes engranes y utilizamos en total 4 microservomotores en todo el brazo.
-                            </p>
-                     <p class="fs-6 mb-4">Construimos un circuito en TInkercad donde utilizamos 4 potenciómetros, dos para el brazo, uno para la base y otro para la pinza.
-                            </p>
-                     <p class="fs-6 mb-4">Para crear el código, utilizamos un Arduino para programar el movimiento de los servomotores con los potenciómetros y lo probamos con la simulación.
-                            </p>
-                     <p class="fs-6 mb-4">Teniendo el código y el brazo listo, comenzamos a probar cada uno de los potenciómetros para comprobar si se mueven en la dirección correcta y si no presenta alguna falla el circuito, hasta lograr conectar todos en un mismo protoboard y hacer funcionar el brazo.
-                            </p>
-                             <h2 class="fw-bolder mb-4 mt-5 fs-5">Construcción</h2>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/construccion.jpg" alt="..." /></figure>
-                           <h2 class="fw-bolder mb-4 mt-5 fs-5">Código</h2>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/codigo.png" alt="..." /></figure>
-
-                        <p id="resultados">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">El brazo robótico funcionó correctamente, permitiendo el control de cada articulación. Los potenciómetros ajustaron los ángulos de los servos con una respuesta rápida. Logramos poder cargar la pelota y moverla hacia otro lado, cumpliendo con el objetivo de la práctica.</p>
-                    <h2 class="fw-bolder mb-4 mt-5 fs-5">Video Pinza</h2>
-                        <figure class="mb-4" align="center"><video width="60%"  controls>
-                            <source src="video/videopinza.mp4" type="video/mp4">
-                        </video></p></figure>
-                     <h2 class="fw-bolder mb-4 mt-5 fs-5">Video Brazo</h2>
-                        <figure class="mb-4" align="center"><video width="60%"  controls>
-                            <source src="video/videobrazo.mp4" type="video/mp4">
-                        </video></p></figure>
-
-                        <p id="conclusiones">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">En conclusión, esta práctica funciono bien ya que nos permite mover una pelota con precisión. Los potenciómetros sirvieron para controlar cada articulación del brazo, permitiendo movimientos coordinados para agarrar y desplazar la pelota.</p>
-                        
-                        <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                       
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigoarduino.ino</a> </p>
-                        
-
-                </div>
-            </section>
-
-            
-        </main>
-
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+                
+
+                <p id="construccion">
+                <h1 class="fw-bolder2 mb-4 mt-5 fs-5">- Construcción -</h1>
+                    <div class="row gx-6">
+                            <!-- Contact card free-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                             <p class="fs-6 mb-4">
+                            <figure class="mb-4" align="center">
+                        En ésta ocasión se reutilzó la mayor parte del brazo robótico previamente ensamblado, al cual, tras una serie de pruebas, los servomotores fueron dispuestos en 4 distintos puertos del protoboard, y además de eso, se agregarán capacitores electrolíticos en paralelo, con el propósito de almacenar energía y mantener encendido en todo momento el programa.
+                            </figure>
+                                        </div>
+                                    </div>
+                </div>
+                <div class="row gx-5">
+
+                        <div class="col-lg-6">
+                            <!-- Contact card free-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                             <p class="fs-6 mb-4">
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/V.jpg" alt="..." /></figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        <div class="col-lg-6">
+                            <!-- Post content-->
+                            <div class="my-5">
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="250px" src="img/TR.jpg" alt="..." /></figure>
+                            </div>
+                        </div>
+                    </div>
+               </p>
+
+
+                <p id="resultados">
+                <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+
+                <p class="fs-6 mb-4">Con las nuevas modificaciones de software y hadware, la garra es capaz de ser manipulada de manera remota con bluetooth, logrando mover de manera independiente cada una de las partes que lo integran.</p>
+                <div class="row gx-5">
+    <div class="col-lg-6">
+                            <!-- Post content-->
+                            <div class="my-5">
+                                <figure class="mb-4" align="center"><video width="60%" controls>
+                        <source src="video/AA.mp4" type="video/mp4">
+                    </video></figure>
+
+                            </div>
+
+
+                        </div>
+                         <div class="col-lg-6">
+                            <!-- Post content-->
+                            <div class="my-5">
+                                <figure class="mb-4" align="center"><video width="60%" controls>
+                        <source src="video/CC.mp4" type="video/mp4">
+                    </video></figure>
+                    
+                            </div>
+
+
+                        </div>
+                </div>
+
+                
+
+                <p id="conclusiones">
+                    <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                    <p class="fs-6 mb-4">La finalidad de esta práctica fue aprender más sobre el control de Arduino y un módilo bluetooth, al igual que cómo utilizarlo de manera más compleja en la unión de distintos programas.<br>
+                    Trabajar en el empalme de distintas herrmientas como el Bluetooth, facilita el control de muchos circuitos, como en el caso de la garra, da un control más óptimo y funcional.
+                     </p><br><br><br><br><br>
+                    
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div>
+                </div>
+                <div class="col-auto">
+                    <a class="link-light small" href="#!">Privacy</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Terms</a>
+                    <span class="text-white mx-1">&middot;</span>
+                    <a class="link-light small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
